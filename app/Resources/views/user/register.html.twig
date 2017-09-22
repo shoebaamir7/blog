@@ -1,5 +1,5 @@
 {% extends 'home.html.twig' %}
-
+{% block title %} Registration {% endblock %}
 {% block body %}
     <div class="container">
         <section>
@@ -22,8 +22,6 @@
             <div class="form-group">
                 {{ form_row(form.plainPassword.second) }}
             </div>
-
-            <button type="submit">Register!</button>
             {{ form_end(form) }}
         </section>
     </div>

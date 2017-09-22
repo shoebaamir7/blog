@@ -1,5 +1,5 @@
 <?php
-
+/*
 namespace AppBundle\Form;
 
 use AppBundle\Entity\User;
@@ -13,7 +13,7 @@ use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
-class UserType extends AbstractType
+class LoginType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -33,8 +33,8 @@ class UserType extends AbstractType
                             'class' => 'form-control',
                             'style' => 'margin:5px 0;'),
                     'choices'  => array(
-                            'ROLE_USER'   => 'Normal User',
-                            'ROLE_ADMIN'   => 'Admin User',
+                            'Normal User'   => 'Normal User',
+                            'Admin User'   => 'Admin User',
                     ),
             ))    
             ->add('plainPassword', RepeatedType::class, array(
@@ -54,4 +54,4 @@ class UserType extends AbstractType
             'data_class' => User::class,
         ));
     }
-}
+}*/
